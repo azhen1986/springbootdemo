@@ -1,0 +1,5 @@
+com\springboot\controller\FreeMarkerController.class
+com\springboot\entity\User.class
+com\springboot\controller\ThymeleafController.class
+com\springboot\controller\UserController.class
+com\springboot\Application.class
