@@ -14,7 +14,8 @@ import org.springframework.context.annotation.Configuration;
  * 修改人：Admin
  * 修改时间：Nov 1, 2017 7:25:07 PM
  * 修改内容：
- * 
+ * 2017-11-02 修改返回template路径若以/开始，则将导致请求无法到classpath:template目录下(mvn spring-boot:run没问题)
+ *            直接返回template下的文件名称即可
  * @version 1.0
  */
 @EnableAutoConfiguration

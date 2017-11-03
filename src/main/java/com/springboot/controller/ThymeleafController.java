@@ -17,7 +17,7 @@ public class ThymeleafController
     {
 
         map.put("hello", "from TemplateController.helloHtml");
-        return "/helloThymeleaf";
+        return "helloThymeleaf";//spring-boot:run work ;java -jar work
     }
 
     /**
@@ -38,6 +38,6 @@ public class ThymeleafController
         people.add(p3);
         model.addAttribute("singlePerson", single);
         model.addAttribute("people", people);
-        return "/thymeleaf";
+        return "thymeleaf";
     }
 }

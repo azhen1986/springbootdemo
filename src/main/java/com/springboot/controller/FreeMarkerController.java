@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * 
  * 类名称：FreeMarkerController    
- * 类描述：    
+ * 类描述：  freemarker demo 注意返回的路径 helloFtl
  * 创建人：Admin    
  * 创建时间：Nov 1, 2017 7:16:57 PM    
  * 修改人：Admin
@@ -23,6 +23,6 @@ public class FreeMarkerController
     public String helloHtml(Map<String,Object> map){  
   
        map.put("hello","from FreeMarkerController.helloFtl");  
-       return"/helloFtl";  
+       return "ftl/helloFtl"; 
     } 
 }
