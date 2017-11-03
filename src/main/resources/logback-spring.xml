@@ -210,7 +210,7 @@
             <!--<appender-ref ref="FILEWARN"/>-->
             <!--<appender-ref ref="FILEINFO"/>-->
             <!--<appender-ref ref="DBAPPENDER"/>-->
-            <!--<appender-ref ref="CONSOLE"/>-->
+            <appender-ref ref="CONSOLE"/>
 
         </root>
     </springProfile>
