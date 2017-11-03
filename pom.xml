@@ -7,7 +7,7 @@
     <groupId>spring-boot-demo</groupId>
     <artifactId>spring-boot-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+	<packaging>jar</packaging><!-- war -->
 
     <!-- Inherit defaults from Spring Boot -->
     <parent>
@@ -36,6 +36,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency><!-- support outer tomcat meantime -->
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-tomcat</artifactId>
+	        <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 
@@ -49,6 +54,7 @@
 
     <!-- Package as an executable JAR -->
     <build>
+    	<!--<finalName>spring-boot</finalName> 指定jar包或war包的名称 -->
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

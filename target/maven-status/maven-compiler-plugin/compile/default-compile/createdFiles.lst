@@ -1,3 +1,4 @@
+com\springboot\ApplicationTom.class
 com\springboot\controller\UserController.class
 com\springboot\entity\Person.class
 com\springboot\controller\FreeMarkerController.class
