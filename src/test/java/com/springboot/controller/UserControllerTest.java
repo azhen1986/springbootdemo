@@ -12,6 +12,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import com.springboot.Application;
+import com.springboot.ApplicationTom;
 
 /**
  * 
@@ -25,7 +26,7 @@ import com.springboot.Application;
  * @version 1.0
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class)// 增加启动类
+@SpringBootTest(classes = ApplicationTom.class)// 增加启动类
 @AutoConfigureMockMvc
 public class UserControllerTest
 {
@@ -44,8 +45,7 @@ public class UserControllerTest
 //                .andExpect(MockMvcResultMatchers.content().string(Matchers.containsString("ok")));
       //请求的url,请求的方法是get   //数据的格式//添加参数
         String responseString = mvc.perform(MockMvcRequestBuilders.
-                get("/user/test")    
-                .contentType(MediaType.APPLICATION_FORM_URLENCODED).param("t1","this is t1"))
+                get("/user/test") .param("t1","this is t1"))
                 .andExpect(MockMvcResultMatchers.status().isOk())    //返回的状态是200
                 .andDo(MockMvcResultHandlers.print())        //打印出请求和相应的内容
                 .andReturn().getResponse().getContentAsString();   //将相应的数据转换为字符串
