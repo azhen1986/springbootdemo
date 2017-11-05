@@ -1,7 +1,7 @@
-com\springboot\ApplicationTom.class
 com\springboot\controller\UserController.class
-com\springboot\entity\Person.class
-com\springboot\controller\FreeMarkerController.class
-com\springboot\entity\User.class
+com\springboot\ApplicationTom.class
 com\springboot\controller\ThymeleafController.class
+com\springboot\controller\FreeMarkerController.class
 com\springboot\Application.class
+com\springboot\entity\Person.class
+com\springboot\entity\User.class
