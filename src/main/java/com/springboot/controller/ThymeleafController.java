@@ -19,7 +19,8 @@ public class ThymeleafController
     @RequestMapping("/helloHtml")
     public String helloHtml(Map<String, Object> map)
     {
-        logger.info("ThymeleafController helloHtml");
+        logger.info("ThymeleafController helloHtml info log");
+        logger.error("ThymeleafController helloHtml error log");
         map.put("hello", "from TemplateController.helloHtml");
         return "helloThymeleaf";//spring-boot:run work ;java -jar work
     }
