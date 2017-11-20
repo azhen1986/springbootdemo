@@ -35,12 +35,12 @@
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <scope>test</scope><!-- 执行单元测试时可用，不会被打包，不会被传递依赖 -->
         </dependency>
         <dependency><!-- support outer tomcat meantime -->
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-starter-tomcat</artifactId>
-	        <scope>provided</scope>
+	        <scope>provided</scope><!-- provided scope:编译和测试可用，不会被打包，不会被传递依赖 -->
         </dependency>
     </dependencies>
 
