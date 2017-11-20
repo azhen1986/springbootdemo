@@ -18,6 +18,7 @@
 
     <!-- Add typical dependencies for a web application -->
     <dependencies>
+    	<!-- 提供starter依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -57,7 +58,7 @@
     	<!--<finalName>spring-boot</finalName> 指定jar包或war包的名称 -->
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
+                <groupId>org.springframework.boot</groupId><!-- spring boot plugin 提供mvn spring-boot:run启动和java -jar 启动 -->
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>  
                 	<fork>true</fork>  
