@@ -10,6 +10,7 @@
 	<packaging>jar</packaging><!-- war -->
 
     <!-- Inherit defaults from Spring Boot -->
+    <!-- Parent pom providing dependency and plugin management for applications built with Maven  -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -22,11 +23,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!-- 剔除starter依赖的相应的jackson,然后可以使用指定的版本的jackson
+            <exclusions>
+				<exclusion>
+					<groupId>com.fasterxml.jackson.core</groupId>
+				</exclusion>
+			</exclusions>
+			 -->
         </dependency>
         <!-- 同时支持thymeleaf 和freemarker -->
         <dependency>  
          	<groupId>org.springframework.boot</groupId>  
-        	<artifactId>spring-boot-starter-thymeleaf</artifactId>  
+        	<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 		<dependency>  
         	<groupId>org.springframework.boot</groupId>  
