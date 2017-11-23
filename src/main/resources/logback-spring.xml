@@ -193,11 +193,12 @@
     <!--<resetJUL>true</resetJUL>-->
     <!--</contextListener>-->
 
-    <springProfile name="production">
-        <root level="DEBUG">
+    <springProfile name="prod">
+        <root level="INFO">
             <appender-ref ref="FILEERROR"/>
             <appender-ref ref="FILEWARN"/>
             <appender-ref ref="FILEINFO"/>
+            <appender-ref ref="STDOUT"/>
             <!--<appender-ref ref="DBAPPENDER"/>-->
             <!--<appender-ref ref="STDOUT"/>-->
         </root>
@@ -210,8 +211,8 @@
             <!--<appender-ref ref="FILEWARN"/>-->
             <!--<appender-ref ref="FILEINFO"/>-->
             <!--<appender-ref ref="DBAPPENDER"/>-->
-            <appender-ref ref="CONSOLE"/>
-
+            <appender-ref ref="STDOUT"/>
+			
         </root>
     </springProfile>
 
